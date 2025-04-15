@@ -182,42 +182,40 @@ a{
     color: orangered;
 }
 
+.logo{
+    background-image: url("assets/amazon_logo.png");
+}
 .box1-img{
-    background-image: url("box1.jpg") ;
-    background-size: cover;
+    background-image: url("assets/box1.jpg");
 }
 .box2-img{
-    background-image: url("pc.jpg") ;
-    background-size: cover;
+    background-image: url("assets/pc.jpg");
 }
-
 .box3-img{
-    background-image: url("game.jpg") ;
-    background-size: cover;
+    background-image: url("assets/game.jpg");
 }
-
 .box4-img{
-    background-image: url("furniture.jpg") ;
-    background-size: cover;
+    background-image: url("assets/furniture.jpg");
 }
-
 .box5-img{
-    background-image: url("topdeal.jpg") ;
-    background-size: cover;
+    background-image: url("assets/topdeal.jpg");
 }
-
 .box6-img{
-    background-image: url("toys.jpg") ;
-    background-size: cover;
+    background-image: url("assets/toys.jpg");
 }
 .box7-img{
-    background-image: url("shoes.jpg") ;
-    background-size: cover;
+    background-image: url("assets/shoes.jpg");
 }
 .box8-img{
-    background-image: url("smartwaches.jpg") ;
-    background-size: cover;
+    background-image: url("assets/smartwaches.jpg");
 }
+.hero-sec{
+    background-image: url("assets/main-image.jpg");
+}
+.foot-logo{
+    background-image: url("assets/amazon2.png");
+}
+
 footer{
     margin-top: 15px;
 }
@@ -263,7 +261,6 @@ ul{
 .foot-logo{
     height: 53px;
     width: 125px;
-    background-image: url("amazon2.png");
     background-size: cover;
     
 }
@@ -283,4 +280,79 @@ ul{
 }
 .foot-panel2 a:hover{
     text-decoration: underline;
+}
+@media (max-width: 1200px) {
+    .nav-search {
+        width: 500px;
+    }
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .panel-opc {
+        display: none; /* Hide optional panel items for smaller screens */
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .hero-mess {
+        font-size: 0.75rem;
+        padding: 5px;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .foot-panel2 ul {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-cart,
+    .nav-sign,
+    .nav-return {
+        font-size: 0.7rem;
+    }
+
+    .nav-cart i {
+        font-size: 20px;
+    }
+
+    .search-select {
+        width: 60px;
+    }
+
+    .hero-sec {
+        height: 200px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .foot-panel1,
+    .foot-panel3,
+    .foot-panel4 {
+        font-size: 0.65rem;
+    }
 }
